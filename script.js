@@ -28,7 +28,7 @@ const battery = () => {
 
            function updateChargingInfo(){
             const isCharging = battery.charging ? "Yes" :"No";
-            batteryCharging.innerHTML = isCharging;
+            batteryCharging.textContent = isCharging;
            }
 
 
@@ -38,7 +38,7 @@ const battery = () => {
            })
 
            function updateChargingTimeChangeInfo(){
-             batteryChargingTime.innerHTML = battery.chargingTime;
+             batteryChargingTime.textContent = battery.chargingTime;
            }
 
 
@@ -48,7 +48,7 @@ const battery = () => {
            })
 
            function updateDischargingTimeinfo(){
-             batteryDisChargingTime.innerHTML = battery.dischargingTime +' seconds';
+             batteryDisChargingTime.textContent = battery.dischargingTime +' seconds';
            }
 
 
@@ -60,7 +60,7 @@ const battery = () => {
            })
            function updateLevelChange(){
              const level = battery.level * 100+"%";
-             batteryLevel.innerHTML = level;
+             batteryLevel.textContent = level;
            }
            // Battery status
 
